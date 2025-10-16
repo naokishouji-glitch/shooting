@@ -1,0 +1,90 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #0f0;
+    text-shadow: 2px 2px #f0f;
+}
+
+#game-container {
+    position: relative;
+    border: 2px solid #0f0;
+}
+
+canvas {
+    background-color: #111;
+    display: block;
+}
+
+#score-board {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#score, #lives {
+    color: #ff0;
+}
+
+#controls {
+    margin-top: 20px;
+    color: #888;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-over, #game-clear {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #f00;
+}
+
+#game-clear {
+    border-color: #0ff;
+}
+
+#game-over h2 {
+    color: #f00;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#game-clear h2 {
+    color: #0ff;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Google Fontsからフォントを読み込むための@import */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>インベーダーゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>インベーダーゲーム</h1>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="game-over" class="hidden">
+            <h2>GAME OVER</h2>
+            <button id="restart-button">もう一度プレイ</button>
+        </div>
+        <div id="game-clear" class="hidden">
+            <h2>GAME CLEAR!</h2>
+            <button id="restart-button-clear">もう一度プレイ</button>
+        </div>
+    </div>
+    <div id="score-board">
+        <p>スコア: <span id="score">0</span></p>
+        <p>ライフ: <span id="lives">3</span></p>
+    </div>
+    <div id="controls">
+        <p>操作方法:</p>
+        <p>← → : 移動</p>
+        <p>スペースキー : 弾の発射</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
