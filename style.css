@@ -86,5 +86,30 @@ button:hover {
     color: #000;
 }
 
+#boss-health-container {
+    margin-top: 10px;
+    width: 50%;
+}
+
+#boss-health-container p {
+    margin: 0 0 5px 0;
+    color: #f00;
+    font-size: 1.1em;
+}
+
+#boss-health-bar-outer {
+    width: 100%;
+    height: 20px;
+    border: 2px solid #f00;
+    background-color: #333;
+}
+
+#boss-health-bar-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #f00;
+    transition: width 0.2s linear;
+}
+
 /* Google Fontsからフォントを読み込むための@import */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
